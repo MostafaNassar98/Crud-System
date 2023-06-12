@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- --------FontAwesome link file-------- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- --------Bootstrap link file-------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- --------Style link file-------- -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Crud Sestem</title>
+</head>
+<body>
+    <div class="w-75 shadow-lg mx-auto p-5 text-uppercase">
+        <h1 class="text-center fw-bolder">crud system</h1>
+        <label for="pname">Product Name</label>
+        <input type="text" id="pname" class="form-control mb-3">
+        <div class="alert alert-danger d-none" id="nameAlert"  role="alert">
+            Product Name REQIRED
+        </div>
+        
+        <label for="pcategory">Product Category</label>
+        <input type="text" id="pcategory" class="form-control mb-3">
+        <div class="alert alert-danger d-none" id="categoryAlert"  role="alert">
+            Product Category REQIRED
+        </div>
+        <label for="pprice">Product Price</label>
+        <input type="text" id="pprice" class="form-control mb-3">
+        <div class="alert alert-danger d-none" id="priceAlert"  role="alert">
+            Product Price REQIRED
+        </div>
+        <label for="pdescription">Product Description</label>
+        <textarea id="pdescription" class="form-control mb-3"></textarea>
+        
+        <button class="btn btn-primary" id="addbtn">Add Product</button>
+        <button class="btn btn-warning d-none" id="updatebtn">Update Product</button>
+        <button class="btn btn-danger" id="clear">Clear</button>
+    </div>
+    <input type="text" placeholder="Search" id="searchinput" class="form-control w-50 m-auto shadow-lg mt-4">
+    <table class="table w-75 m-auto my-4">
+        <thead>
+            <tr>
+                <th >index</th>
+                <th >name</th>
+                <th >Category</th>
+                <th >Price</th>
+                <th >desc</th>
+                <th >Update</th>
+                <th >Delete</th>        
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <!-- <script src="../Crud Syatem/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
